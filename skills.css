@@ -1,9 +1,9 @@
-section {
+.skill-container {
     padding: 50px;
     text-align: center;
     height: 100vh;
   }
-  section h1{
+  .skill-container h1{
     font-family: "Qwigley", cursive;
     font-weight: 400;
     font-style: normal;
@@ -24,4 +24,10 @@ img{
 .skill-box{
     display: flex;
     flex-direction: start;
+}
+@media (max-width: 768px){
+  .skill-container{
+    justify-content: center;
+    text-align: center;
+  }
 }

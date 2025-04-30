@@ -23,8 +23,8 @@
     background: #FAF8EE !important;
     color:#4e54c8;
     font-family: "Playfair Display", serif;
-    box-shadow:
-    0.3em 0.3em 1em #161617;
+    /* box-shadow:
+    0.3em 0.3em 1em #161617; */
     border-radius: 10px;
 }
 
@@ -53,6 +53,7 @@
     max-width: 300px;
     height: auto;
     border: 1px solid #00000030;
+    border-radius:10px ;
     box-shadow:
     0.3em 0.3em 1em #2b2b2d ;
 }

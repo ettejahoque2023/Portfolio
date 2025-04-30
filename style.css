@@ -65,8 +65,9 @@
   .hero-img img{
     border: 1px solid black ;
     height: 500px;
+    border-radius: 20px;
     box-shadow:
-    0.3em 0.3em 1em rgba(19, 19, 19, 0.6);
+    0.3em 0.3em 1em rgba(19, 19, 19, 1);
   }
   /* Button style */
   .btn {
@@ -124,13 +125,19 @@
       text-align: center;
       padding: 20px;
     }
+
+    .hero-text{
+      font-size: 50px;
+      padding-top: 40px;
+      margin: 0 auto;
+    }
     
 
     .hero-img{
+      
       display: flex;
       justify-content: center;
       width: 100%;
-      
     }
 }
 
