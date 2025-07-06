@@ -20,6 +20,8 @@
   
   /* Navbar styles */
   .navbar{
+   width: 100%;
+  max-width: 100%;
     padding: 10px 20px;
     position: sticky;
     top: 0;
@@ -30,6 +32,13 @@
   }
   .navbar a{
     color: #4e54c8;
+  }
+
+ .navbar a:hover{
+    text-decoration: underline #4e54c8 !important;
+    color: #4e54c8;
+    transition: all 0.3s ease;
+
   }
  
   /* Hero Section */
@@ -82,12 +91,15 @@
     0.3em 0.3em 1em rgba(19, 19, 19, 0.6);
   }
 
-
+/* Footer section */
   .footer {
+    width: 100%;
+    max-width: 100%;
     background-color:#fff;
     color: #8f94fb;
     padding: 20px 0;
     text-align: center;
+
     
   }
   
@@ -114,8 +126,9 @@
     transition: color 0.3s ease;
   }
   
-  .footer-icons a:hover {
-    color: #ffd700;
+  .footer-icons i:hover {
+    color: #ffd700 !important;
+    font-size: 1.4em;
   }
   
 
@@ -123,22 +136,32 @@
     .hero {
       flex-direction: column;
       text-align: center;
-      padding: 20px;
+      align-items: center;
+
     }
 
     .hero-text{
-      font-size: 50px;
+      font-size: 30px;
       padding-top: 40px;
       margin: 0 auto;
     }
-    
 
+    .hero-text h1{
+      font-size: 60px;
+    }
+  
     .hero-img{
-      
       display: flex;
       justify-content: center;
-      width: 100%;
+      align-items: center;
     }
+    .hero-img img{
+      height: 250px;
+      width: 250px;
+      max-width: 100%;
+      border-radius: 50%;
+    }
+
 }
 
 

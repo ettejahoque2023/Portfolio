@@ -14,7 +14,7 @@
   }
 .container{
      /* full height of viewport */
-     /* height: 100vh; */
+     
     padding: 40px;
     display: flex;
     align-items: flex-start;

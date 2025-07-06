@@ -5,7 +5,12 @@ body {
     display: flex;
     flex-direction: column;
     color: #4e54c8;
+    overflow-x: hidden; /* ✅ Hides horizontal scroll */
   }
+
+.main-content{
+    flex:1;
+}
 
 .contact-container{
     display: flex;
@@ -53,11 +58,16 @@ body {
     width: 100%;
   height: auto;
 }
-.icon-box a{
+.icon-box i{
     margin-left: 20px;
     color: #4e54c8;
     font-size: x-large;
 }
+
+.icon-box i:hover {
+    color: #ffd700 !important;
+    font-size: 1.4em;
+  }
 .icon-box h2{
     font-family: "Qwigley", cursive;
     font-weight: 400;
@@ -74,4 +84,8 @@ body {
         max-width: 90%;
       
     }
+     .left-content h1 {
+    font-size: 50px;
+     }
+
 }

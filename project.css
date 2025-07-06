@@ -7,21 +7,38 @@ body{
     background: #FAF8EE !important;
 }
 
-.navbar a{
+/* Navbar styles */
+  .navbar{
+   width: 100%;
+  max-width: 100%;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .navbar-brand{
+    color: #fff;
+  }
+  .navbar a{
     color: #4e54c8;
   }
+
+ .navbar a:hover{
+    text-decoration: underline #4e54c8 !important;
+    color: #4e54c8;
+    transition: all 0.3s ease;
+
+  }
+ 
+
 
 .projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
-    max-width: 1100px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding:20px;
-    border-radius:20px 20px 20px 20px ;
-    box-shadow:
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
 
 }
 
@@ -30,6 +47,10 @@ body{
     min-width: 250px;
     box-shadow:
     0.3em 0.3em 1em rgba(19, 19, 19, 0.6);
+}
+
+.card:hover{
+    transform: scale(1.1);
 }
 
 h1 {
@@ -49,11 +70,16 @@ h1 {
     background-color: #4e54c8;
 }
 
-.footer {
+
+/* Footer section */
+  .footer {
+    width: 100%;
+    max-width: 100%;
     background-color:#fff;
-    color: #8f94fb;
-    margin-top: 20px;
+    color: #8f94fb !important;
+    padding: 20px 0;
     text-align: center;
+
     
   }
   
@@ -61,7 +87,6 @@ h1 {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
-    padding-top: 20px;
   }
   
   .footer-content p {
@@ -75,40 +100,61 @@ h1 {
     gap: 15px;
   }
   
-  .footer-icons a {
-    color:#8f94fb;
+  .footer-icons i {
+    color: #8f94fb !important;;
     font-size: 1.3em;
     transition: color 0.3s ease;
   }
   
-  .footer-icons a:hover {
-    color: #ffd700;
+  .footer-icons i:hover {
+    color: #ffd700 !important;
+    font-size: 1.4em;
   }
 
-/* 📱 Mobile devices (width <= 600px) */
-@media (max-width: 600px) {
+@media (max-width: 768px){
     .card {
         width: 100%; /* 1 ta card ek row-te */
     }
     .projects{
-        margin: 10px;
+        border-radius: 0%;
+        box-shadow: none;
+    }
+    h1{
+        font-size: 50px;
     }
 }
 
-/* 📱 Tablets (width between 600px and 900px) */
+
+/* 📱 Mobile devices (width <= 600px)
+@media (max-width: 600px) {
+    .card {
+        width: 100%; /* 1 ta card ek row-te */
+    /* }
+    .projects{
+        border-radius: 0%;
+        box-shadow: none;
+    }
+    h1{
+        font-size: 50px;
+    }
+} */
+
+/* 📱 Tablets (width between 600px and 900px)
 @media (min-width: 601px) and (max-width: 900px) {
     .card {
         width: 45%; /* 2 ta card ek row-te */
-    }
+    /* }
     .projects{
-        margin: 10px;
+        border-radius: 0%;
+        box-shadow: none;
     }
-}
+     h1{
+        font-size: 60px;
+    }
+} */ */
 
 /* 💻 Desktops (width > 900px) */
-@media (min-width: 901px) {
+/* @media (min-width: 901px) {
     .card {
         width: 30%; /* 3 ta card ek row-te */
-    }
 
-}

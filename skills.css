@@ -1,33 +1,51 @@
+body{
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  background-color: #fefbee;
+  flex-direction: column;
+}
+
 .skill-container {
-    padding: 50px;
     text-align: center;
-    height: 100vh;
+    padding: 50px 20px;
+    flex: 1;
+
   }
   .skill-container h1{
     font-family: "Qwigley", cursive;
     font-weight: 400;
-    font-style: normal;
     font-size: 100px;
+    margin-bottom: 40px;
   }
 
-img{
-    width: 100px;
-    height: 100px;
-    box-shadow: 
-    0.3em 0.3em 1em rgba(15, 2, 2, 100);
-    border-radius: 50%;
-    margin: 20px;
+  /* Wrap the icons in a flex container */
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
-.progress{
-    width: 200px;
+
+.skill-icons img {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0.3em 0.3em 1em rgba(15, 2, 2, 1);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
 }
-.skill-box{
-    display: flex;
-    flex-direction: start;
+
+.skill-icons img:hover {
+  transform: scale(1.1);
 }
-@media (max-width: 768px){
-  .skill-container{
-    justify-content: center;
-    text-align: center;
+
+@media (max-width: 768px) {
+  .skill-container h1 {
+    font-size: 60px;
+  }
+
+  .skill-icons {
+    flex-direction: column;
+    align-items: center;
   }
 }
