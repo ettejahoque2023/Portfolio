@@ -14,7 +14,6 @@
   }
 .container{
      /* full height of viewport */
-     
     padding: 40px;
     display: flex;
     align-items: flex-start;
@@ -61,6 +60,80 @@
   display:inline-block;
   margin-top: 100px;
 }
+
+.timeline-section {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.timeline-heading {
+  color: #3c3c94;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  padding-left: 40px;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 130px;
+  padding-left: 50px;
+  border-left: 3px solid #ccc;
+}
+
+.timeline-item {
+  position: relative;
+  width:50%;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  background: #3c3c94;
+  border-radius: 50%;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: -70px;
+  top: 0;
+  font-size: 30px;
+}
+
+.timeline-content {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h5{
+  font-weight: 800;
+}
+
+.certificates-section h2 {
+  color: #3c3c94;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.list-group-item {
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+.certificates-section .card img {
+  height: 200px;
+  object-fit: contain;
+}
+
+
 
 
 @media (max-width: 768px) {
